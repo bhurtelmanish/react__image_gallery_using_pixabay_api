@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    transition: 0.25s ease;
+    /* border: 1px solid red; */
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgb(14, 18, 19) , rgb(12, 24, 24));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(230, 230, 230);
+    padding: 0 1rem 0 1rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.searchField{
+    height: 3rem;
+    width:34rem;
+    border:none;
+    outline:none;
+    border-radius: 0.3rem;
+    padding: 0 1rem 0 1rem;
+    /* margin: auto; */
+    display: block;
+    background-color: rgb(230, 230, 230);
+    font-size: 1rem;
+    /* margin-bottom: 2rem; */
+}
+.imageCard-container{
+    /* background-color: rgb(38, 37, 46); */
+    height: auto;
+    width: 90vw;
+    max-width: 76rem;
+    margin: auto;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding:1rem;
+    min-height: 10rem;
+}
+
+.images-container{
+    /* background-color: red; */
+    width: fit-content;
+    overflow: hidden;
+    height: 16rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.imageCard:hover{
+    transform: scale(1.06);
+    cursor: pointer;
+}
+.imageCard{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.contents-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap:1rem;
+}
+.button{
+    height: auto;
+    width: auto;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    color: white;
+    background-color: rgb(37, 99, 235);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+@media (max-width: 1350px) {
+    .searchField{
+        height: 3rem;
+        width:35rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .images-container{
+        height: 14rem;
+        width: 23rem;
+    }
+    .imageCard-container{
+        /* background-color: rgb(38, 37, 46); */
+        height: auto;
+        /* width: 100vw; */
+        max-width: 76rem;
+    }
+}
+
+@media (max-width: 840px) {
+    .images-container{
+        height: 19rem;
+        width: 37rem;
+    }
+}
+
+@media (max-width: 550px) {
+    h1{
+        margin-top: 6rem;
+        font-size: 2rem;
+    }
+    .searchField{
+        height: 2.3rem;
+        font-size: 0.9rem;
+        width:25rem;
+        max-width: 25rem;
+    }
+    .images-container{
+        height: 12rem;
+        width: 33rem;
+    }
+}
