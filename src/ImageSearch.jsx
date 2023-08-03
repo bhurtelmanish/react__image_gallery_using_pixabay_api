@@ -40,7 +40,7 @@ const ImageSearch = () => {
         className='searchField' 
         placeholder='Search Images here...'
       />
-      <button className='button' type='button'>Show Images</button>
+      {/* <button className='button' type='button'>Show Images</button> */}
     </div>
       <ImageCard images={images}/>
     </>
