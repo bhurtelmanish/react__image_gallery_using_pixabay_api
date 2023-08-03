@@ -11,7 +11,7 @@ const ImageSearch = () => {
     const [loading , setloading] = useState(false)
     const getImages = () => {
         axios
-          .get(`https://pixabay.com/api/?key=38569412-a40096df86f4bb51fd2bf90cf&q=${searchTerm}&image_type=all&colors=all&order=popular`)
+          .get(`https://pixabay.com/api/?key=YOUR_API_KEY_HERE&q=${searchTerm}&image_type=all&colors=all&order=popular`)
           .then((res) => {
             setloading(true);
               setimages(res.data.hits);
@@ -40,7 +40,7 @@ const ImageSearch = () => {
         className='searchField' 
         placeholder='Search Images here...'
       />
-      {/* <button className='button' type='button'>Show Images</button> */}
+      <button className='button' type='button'>Show Images</button>
     </div>
       <ImageCard images={images}/>
     </>
